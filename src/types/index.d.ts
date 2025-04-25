@@ -1,3 +1,5 @@
+import { ImageSourcePropType } from "react-native";
+
 export interface UseAppwriteOptions<
   T,
   P extends Record<string, string | number>
@@ -32,4 +34,12 @@ export interface TabProps {
   focused: boolean;
   icon: any;
   title: string;
+}
+
+export interface SettingsItemProps {
+  icon: ImageSourcePropType;
+  title: string;
+  onPress?: () => void;
+  textStyle?: any;
+  showArrow?: boolean;
 }
