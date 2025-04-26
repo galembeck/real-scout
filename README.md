@@ -1,50 +1,110 @@
-# Welcome to your Expo app 👋
+<div align="center">
+  <br />
+      <img src=".github/assets/real-scout.png" alt="Project Banner">
+  <br />
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+  <div>
+    <img src="https://img.shields.io/badge/-Expo-black?style=for-the-badge&logoColor=white&logo=expo&color=000020" alt="expo" />
+    <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="typescript" />
+    <img src="https://img.shields.io/badge/-Appwrite-black?style=for-the-badge&logoColor=white&logo=appwrite&color=FD366E" alt="appwrite" />
+    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
+  </div>
 
-## Get started
+  <h3 align="center">Real Scout - A Real Estate App</h3>
 
-1. Install dependencies
+   <div align="center">
+     Find your dream home with Real Scout — the ultimate platform for exploring, buying, and renting properties easily and efficiently.
+    </div>
+</div>
 
-   ```bash
-   npm install
-   ```
 
-2. Start the app
+## 📋 <a name="table">Table of Contents</a>
 
-   ```bash
-    npx expo start
-   ```
+1. 🤖 [Introduction](#introduction)
+2. ⚙️ [Tech Stack](#tech-stack)
+3. 🔋 [Features](#features)
+4. 🤸 [Quick Start](#quick-start)
 
-In the output, you'll find options to open the app in a
+## <a name="introduction">🤖 Introduction</a>
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Built with Expo, TypeScript, and Appwrite, **Real Scout** is a production-ready real estate platform that simplifies the property discovery journey. Whether you're searching for a new home, listing your property, or just exploring neighborhoods, Real Scout provides a seamless, intuitive experience. Featuring real-time property updates, advanced filtering, and a beautiful mobile-first UI, Real Scout is crafted to meet the needs of modern property seekers and real estate businesses.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## <a name="tech-stack">⚙️ Tech Stack</a>
 
-## Get a fresh project
+- Expo
+- React Native
+- TypeScript
+- Nativewind
+- Appwrite
+- Tailwind CSS
 
-When you're ready, run:
+## <a name="features">🔋 Features</a>
+
+### Features of Real Scout - Real Estate App
+
+👉 **Home Screen**: Highlight featured properties, latest listings, and personalized recommendations.
+
+👉 **Property Search**: Advanced filters by price, location, type, and amenities.
+
+👉 **Property Details**: Provides comprehensive information about individual properties, including images and key details.
+
+👉 **Explore Page**: Allows users to browse all types of properties with a clean and intuitive interface.
+
+👉 **Profile Page**: Customizable user settings and profile management
+
+👉 **Authentication with Google**: Secure and seamless user sign-ins using Google’s authentication service.
+
+👉 **Centralized Data Fetching**: Custom-built solution inspired by TanStack’s useQuery for efficient API calls.
+
+and much more, including modular architecture and reusability.
+
+## <a name="quick-start">🤸 Quick Start</a>
+
+Follow these steps to set up the project locally on your machine.
+
+**Prerequisites**
+
+Make sure you have the following installed on your machine:
+
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en)
+- [npm](https://www.npmjs.com/) (Node Package Manager)
+
+**Cloning the Repository**
 
 ```bash
-npm run reset-project
+git clone https://github.com/galembeck/real-scout.git
+cd real-scout
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+**Installation**
 
-## Learn more
+Install the project dependencies using npm:
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash
+npm install
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+**Set Up Environment Variables**
 
-## Join the community
+Create a new file named `.env.local` in the root of your project and add the following content:
 
-Join our community of developers creating universal apps.
+```env
+EXPO_PUBLIC_APPWRITE_ENDPOINT=https://fra.cloud.appwrite.io/v1
+EXPO_PUBLIC_APPWRITE_PROJECT_ID=
+EXPO_PUBLIC_APPWRITE_DATABASE_ID=
+EXPO_PUBLIC_APPWRITE_GALLERIES_COLLECTION_ID=
+EXPO_PUBLIC_APPWRITE_REVIEWS_COLLECTION_ID=
+EXPO_PUBLIC_APPWRITE_AGENTS_COLLECTION_ID=
+EXPO_PUBLIC_APPWRITE_PROPERTIES_COLLECTION_ID=
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Replace the values with your actual Appwrite credentials. You can obtain these credentials by signing up & creating a new project on the [Appwrite website](https://apwr.dev/JSM050).
+
+**Start the app**
+   
+```bash
+ npx expo start
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the project. 
