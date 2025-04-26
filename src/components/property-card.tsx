@@ -5,7 +5,7 @@ import { CardProps } from "../types";
 import icons from "../constants/icons";
 import images from "../constants/images";
 
-export function PropertyCard({ onPress }: CardProps) {
+export function PropertyCard({ item, onPress }: CardProps) {
   return (
     <TouchableOpacity
       onPress={onPress}
@@ -14,23 +14,23 @@ export function PropertyCard({ onPress }: CardProps) {
       <View className="flex flex-row items-center absolute px-2 top-5 right-5 bg-white/90 rounded-full p-1 z-50">
         <Image source={icons.star} className="size-2.5" />
         <Text className="text-xs font-rubik-bold text-primary-300 ml-0.5">
-          4.4
+          {item.rating}
         </Text>
       </View>
 
-      <Image source={images.newYork} className="w-full h-40 rounded-lg" />
+      <Image source={{ uri: item.image }} className="w-full h-40 rounded-lg" />
 
       <View className="flex flex-col mt-2">
         <Text className="text-base font-rubik-bold text-black-300">
-          Cozy Studio
+          {item.name}
         </Text>
         <Text className="text-xs font-rubik text-black-200">
-          22 W 15th St, New York
+          {item.address}
         </Text>
 
         <View className="flex flex-row items-center justify-between mt-2">
           <Text className="text-base font-rubik-bold text-primary-300">
-            $2,500
+            ${item.price}
           </Text>
 
           <Image

@@ -108,7 +108,7 @@ export async function getCurrentUser() {
   }
 }
 
-export async function getLatestProperties() {
+export async function getFeaturedProperties() {
   try {
     const result = await databases.listDocuments(
       config.databaseId,

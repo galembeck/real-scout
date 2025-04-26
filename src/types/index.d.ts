@@ -1,4 +1,6 @@
 import { ImageSourcePropType } from "react-native";
+import { Models } from "react-native-appwrite";
+
 import { FeaturedCard } from "@/src/components/featured-card";
 
 export interface UseAppwriteOptions<
@@ -46,6 +48,7 @@ export interface SettingsItemProps {
 }
 
 export interface CardProps {
+  item: Models.Document;
   onPress?: () => void;
 }
 
