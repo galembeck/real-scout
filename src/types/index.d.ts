@@ -57,3 +57,7 @@ export interface GetPropertiesProps {
   query: string;
   limit?: number;
 }
+
+export interface CommentCardProps {
+  item: Models.Document;
+}
