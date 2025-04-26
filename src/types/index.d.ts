@@ -1,4 +1,5 @@
 import { ImageSourcePropType } from "react-native";
+import { FeaturedCard } from "@/src/components/featured-card";
 
 export interface UseAppwriteOptions<
   T,
@@ -42,4 +43,8 @@ export interface SettingsItemProps {
   onPress?: () => void;
   textStyle?: any;
   showArrow?: boolean;
+}
+
+export interface CardProps {
+  onPress?: () => void;
 }
