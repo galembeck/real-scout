@@ -48,3 +48,9 @@ export interface SettingsItemProps {
 export interface CardProps {
   onPress?: () => void;
 }
+
+export interface GetPropertiesProps {
+  filter: string;
+  query: string;
+  limit?: number;
+}

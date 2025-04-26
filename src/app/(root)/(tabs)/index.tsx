@@ -2,14 +2,13 @@ import { FlatList, Image, Text, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import icons from "@/src/constants/icons";
-import images from "@/src/constants/images";
 
 import { useGlobalContext } from "@/src/providers/global-provider";
 
-import { Search } from "@/src/components/search";
 import { FeaturedCard } from "@/src/components/featured-card";
-import { PropertyCard } from "@/src/components/property-card";
 import { Filters } from "@/src/components/filters";
+import { PropertyCard } from "@/src/components/property-card";
+import { Search } from "@/src/components/search";
 
 export default function Index() {
   const { user } = useGlobalContext();
@@ -62,7 +61,7 @@ export default function Index() {
               </View>
 
               <FlatList
-                data={[1, 2, 3]}
+                data={[5, 6, 7]}
                 renderItem={({ item }) => <FeaturedCard />}
                 keyExtractor={(item) => item.toString()}
                 horizontal
